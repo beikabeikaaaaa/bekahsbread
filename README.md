@@ -1,20 +1,19 @@
-# Bekah’s Bread Collection
+# Bekah’s Bread Collection — Root Image Layout
 
-A simple, single-page landing site built with **HTML + CSS** for Week 1 homework.
+This patch matches your current repository structure at:
+https://beikabeikaaaaa.github.io/bekahsbread/
 
-## What’s inside
-- `index.html` – landing page with a hero, intro text, and a gallery
-- `styles.css` – styles, including a tiny **CSS animation** (rising steam) and hover effects
-- `assets/img/` – images used on the page
+## What changed
+- Images are placed at the **repo root** (e.g. `IMG_0372.jpg`) instead of `assets/img/`.
+- `index.html` now uses root-relative paths like `./IMG_0372.jpg`.
 
-## How to run
-Just open `index.html` in your browser.
+## Upload steps
+1. Replace the files in your repo with the ones from this ZIP:
+   - `index.html`
+   - `styles.css`
+   - `IMG_0372.jpg` … `IMG_8342.jpg`
+2. Keep your repository name and GitHub Pages settings as-is.
+3. Force-refresh the site and test an image directly, for example:
+   `https://beikabeikaaaaa.github.io/bekahsbread/IMG_0372.jpg`
 
-## How to upload to GitHub
-1. Create a new repository on GitHub (e.g., `beikas-bread-collection`).
-2. Upload all files and folders in this project (keep the folder structure).
-3. Enable GitHub Pages (Settings → Pages → Deploy from a branch → select `main` → `root`).
-4. Wait a minute and visit the GitHub Pages URL shown in the Pages settings.
-
----
-Made for class by Bekah ♥
+If you prefer a tidy structure later, we can move images to `assets/img/` and update paths.
