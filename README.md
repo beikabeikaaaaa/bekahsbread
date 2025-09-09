@@ -1,19 +1,33 @@
-# Bekah’s Bread Collection — Root Image Layout
+# Bekah’s Bread Collection (v4)
 
-This patch matches your current repository structure at:
-https://beikabeikaaaaa.github.io/bekahsbread/
+**Tidy structure + robust paths** for GitHub Pages.
 
-## What changed
-- Images are placed at the **repo root** (e.g. `IMG_0372.jpg`) instead of `assets/img/`.
-- `index.html` now uses root-relative paths like `./IMG_0372.jpg`.
+## Folder layout
+```
+/ (repo root)
+├── index.html
+├── styles.css
+└── assets/
+    └── img/
+        ├── img-0372.jpg
+        ├── img-0459.jpg
+        ├── img-0700.jpg
+        ├── img-1077.jpg
+        ├── img-1237.jpg
+        ├── img-2607.jpg
+        ├── img-8026.jpg
+        └── img-8342.jpg
+```
 
-## Upload steps
-1. Replace the files in your repo with the ones from this ZIP:
-   - `index.html`
-   - `styles.css`
-   - `IMG_0372.jpg` … `IMG_8342.jpg`
-2. Keep your repository name and GitHub Pages settings as-is.
-3. Force-refresh the site and test an image directly, for example:
-   `https://beikabeikaaaaa.github.io/bekahsbread/IMG_0372.jpg`
+## How to deploy
+1. Upload **all files and folders** to your repo root (keep this structure).
+2. Open `Settings → Pages` → *Deploy from a branch* → Branch: `main` → Folder: `/ (root)`.
+3. Visit your Pages URL and hard‑refresh:
+   `https://beikabeikaaaaa.github.io/bekahsbread/`
+4. Test a direct image URL (should display the image):
+   `https://beikabeikaaaaa.github.io/bekahsbread/assets/img/img-0372.jpg`
 
-If you prefer a tidy structure later, we can move images to `assets/img/` and update paths.
+## Notes
+- All image filenames are **lowercase**.
+- All `<img>` use explicit relative paths: `./assets/img/...`.
+- If you still see 404s, confirm the repo shows those exact files/paths.
