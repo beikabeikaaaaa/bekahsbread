@@ -152,3 +152,50 @@ main{ padding: 24px 16px 64px; max-width: 1080px; margin: 0 auto; }
   padding: 24px 12px 40px;
   color: #666;
 }
+
+
+/* --- Top Navigation --- */
+.topnav{
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 16px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #eee;
+}
+.topnav .brand{
+  font-weight: 800; text-decoration: none; color: var(--ink);
+  letter-spacing: .3px;
+}
+.topnav .spacer{ flex: 1; }
+.topnav a{
+  text-decoration: none; color: var(--ink); font-weight: 600;
+  padding: 8px 12px; border-radius: 10px;
+}
+.topnav a.outline{
+  border: 1px solid #ddd;
+}
+
+/* --- Refined cards --- */
+.card figcaption h3{
+  font-size: 16px; margin: 8px 0 6px;
+}
+.card figcaption p{
+  margin: 0 0 8px; font-size: 14px; color: #444;
+}
+.tags{ display: flex; flex-wrap: wrap; gap: 6px; }
+.chip{
+  font-size: 12px; padding: 4px 8px; border-radius: 999px; background: var(--flour); color: #555;
+  border: 1px solid #eee;
+}
+
+/* --- Contact --- */
+.contact{
+  margin: 56px 0 0; padding: 24px 16px;
+}
+.contact .contact-box{
+  margin-top: 8px; padding: 14px 16px; background: #fff; border: 1px solid #eee; border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.04);
+}
+.contact .contact-line{ margin: 4px 0; }
+.contact a{ color: var(--accent); font-weight: 700; }
